@@ -16,7 +16,6 @@ body {
 /* ----------------------------- */
 /* MOBILE first: Media query for mobile 0 to 540 px */
 /* ----------------------------- */
-
 .heading__team {
   text-align: center;
 }
@@ -48,7 +47,7 @@ body {
   text-align: center;
 }
 
-/* It's not really needed. Difference at very low width sizes can be seen. */
+/* It's not really needed. Differences can be seen at very low width sizes. */
 .member .description {
   display: flex;
   flex-direction: column;
@@ -63,9 +62,7 @@ p {
 
 /* ----------------------------- */
 /* Media query for tablet 540 to 960 px */
-/* Unfortunately it doesn't function as I would like to :( */
 /* ----------------------------- */
-
 @media screen and (min-width: 541px) and (max-width: 960px) {
   .team {
     display: flex;
@@ -78,6 +75,7 @@ p {
     flex: 1;
     flex-direction: row;
     justify-content: flex-start;
+    flex-basis: 34%;
     align-items: stretch;
     margin: 10px;
   }
@@ -102,16 +100,14 @@ p {
     text-align: left;
   }
 
-  /* It doesn't work, why? :( */
   .description h2 {
-    text-align: left;
+    width: 100%;
   }
 }
 
 /* ----------------------------- */
 /* Media query for PC 960px and more */
 /* ----------------------------- */
-
 @media screen and (min-width: 961px) {
   .team {
     display: flex;
